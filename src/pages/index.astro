@@ -16,6 +16,7 @@ import selfie from "../assets/selfie.jpg";
 import painting1 from "../assets/painting-1.jpg";
 import painting2 from "../assets/painting-2.jpg";
 import painting3 from "../assets/painting-3.jpg";
+import mountian from "../assets/mountian.jpg";
 
 const jokes = [
   "What do you call a fake noodle? An impasta!",
@@ -45,7 +46,14 @@ const jokes = [
 
     <section class="letter">
       <p>I wanted to start out by (telling you a joke and) saying I love you so so so much. Sam you mean the world to me and I think your one of the most incredible people I've met and, most importantly, my best friend. "Tender" is a word I learned from you, and not in the literal sense, but from the way you look, talk and interact with the world. When that tenderness is given to me i feel like the happiest Ken [person] in the world.</p>
-      <Image src={ princess } alt="A princess"/>
+      <div class="side-by-side">
+        <article>
+          <Image src={ princess } alt="A princess"/>
+        </article>
+        <article>
+          <Image src={ mountian } alt="Together"/>
+        </article>
+      </div>
       <p>Not only are you soft and caring but i think your so badass. You've accomplished so much just within the time I've known you and it's been amazing to watch you create exhibitions from start to finish, hold down a luxury gallery all on your own when shit hits the fan, and create/secure professional opportunities for yourself by putting in the effort of communating and working with people relentlessly for it.</p>
       <div class="side-by-side">
         <article>
@@ -67,7 +75,6 @@ const jokes = [
           <Image src={ painting3 } alt="A happy girl"/>
         </article>
       </div>
-      <Image src={ beach } alt="A princess"/>
       <p>Being together, forever, is something ive been thinking about more since we talked about it. At times, it can be scary or crazy to think about in the sense of realizing the impact that it has on my life. However the fact that it would be you, my best friend, throughout it all, makes me feel excited about growing up. I love seeing you with Ru, in bed in the morning when you both get to sleep in and when you hold his leash when we walk to the park. I feel safe and relaxed when he's with you and I can't even begin to understand the intensity of that feeling when it would be our baby (and not just my baby boy.) </p>
       <Image src={ selfie } alt="Together"/>
       <p>I love you Sam, <br> Joel Lithgow</p>
@@ -96,22 +103,18 @@ const jokes = [
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .letter {
-      max-width: 70%;
-    }
-  }
-
   img {
     max-width: 100%;
+    max-height: 90vh;
     object-fit: contain;
     height: auto;
+    width: auto;
   }
 
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 1000px;
+		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
