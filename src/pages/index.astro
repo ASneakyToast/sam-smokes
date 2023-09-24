@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
 
 import { Image } from 'astro:assets';
 
@@ -31,6 +32,8 @@ const jokes = [
 
 <Layout title="Welcome to Astro.">
 	<main>
+    <Header />
+
     <section class="header">
       <h1>SamSmokes.com</h1>
     </section>
@@ -39,7 +42,7 @@ const jokes = [
 
     <section class="jokes">
       <p><b>Joke of the day</b></p>
-      <p class="jokes__joke">{ jokes[0] }</p>
+      <p class="jokes__joke">{ jokes[1] }</p>
     </section>
 
     <hr />

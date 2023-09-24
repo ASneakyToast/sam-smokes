@@ -1,0 +1,41 @@
+---
+const { cta } = Astro.props;
+---
+
+<section class="header">
+  <a href="/" class="logo">
+    <p>samsmokes</p>
+  </a>
+  { cta == "return" ?
+    (
+      <a onclick="window.history.go(-1)">
+        <p class="close">close</p>
+      </a>
+    ):(
+      <a href="/menu">
+        <p class="menu">menu</p>
+      </a>
+    )
+  }
+</section>
+
+<style>
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  a {
+    color: white;
+  }
+
+  .logo {
+    text-decoration: none;
+  }
+
+  .close:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
